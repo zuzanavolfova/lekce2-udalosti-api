@@ -9,7 +9,14 @@ function setNormal(element) {
 
 }
 
+let odstavec = document.querySelector('.odstavec')
+
 function odstavecBarva() {
-    let odstavec = document.querySelector('.odstavec')
+
     odstavec.classList.toggle("cervenyText")
+}
+
+function odstavecZvetseni() {
+
+
 }
