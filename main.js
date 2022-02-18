@@ -6,7 +6,6 @@ function setBold(element) {
 
 function setNormal(element) {
     element.style.fontWeight = "normal"
-
 }
 
 let odstavec = document.querySelector('.odstavec')
@@ -17,6 +16,8 @@ function odstavecBarva() {
 }
 
 function odstavecZvetseni() {
-
-
+    let fontSize = window.getComputedStyle(odstavec).getPropertyValue('font-size');
+    let size = parseInt(fontSize);
+    size += 1;
+    odstavec.style.fontSize = size + "px"
 }
