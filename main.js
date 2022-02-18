@@ -32,3 +32,7 @@ function play() {
 function pause() {
     zvuk.pause()
 }
+
+function jdiNaZacatek() {
+    zvuk.currentTime = 0
+}
