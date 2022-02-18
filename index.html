@@ -14,18 +14,17 @@
     <h1>Změna tříd, události</h1>
     <p class="odstavec" onmouseover="setBold(this)" onmouseout="setNormal(this)"> V elipse spí lev</p>
 
-    <div class="ctverecek zluty"></div>
-
-    <!-- <div class="ctverecek zeleny"></div> -->
-
-    <img class="obrazek" src="obrazky/kocka.jpg">
-
-    <button class="tlacitko">Čudlajs</button>
+    <!--<div class="ctverecek zluty"></div>
+    <div class="ctverecek zeleny"></div>
+    <img class="obrazek" src="obrazky/kocka.jpg"> -->
 
     <button class="tlacitko" onclick="odstavecBarva()">Červené po kliknutí</button>
     <button class="tlacitko" onclick="odstavecZvetseni()">Zvětšit text </button>
 
-    <audio src="audio/dingdingdang.mp3" preload="auto"></audio>
+    <button class="tlacitko" onclick="play(this)">Play </button>
+    <button class="tlacitko" onclick="pause(this)">Pause </button>
+
+    <audio id='zvuk' src="audio/dingdingdang.mp3" preload="auto"></audio>
     <script src='main.js'></script>
 </body>
 

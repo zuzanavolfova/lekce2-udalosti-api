@@ -21,3 +21,14 @@ function odstavecZvetseni() {
     size += 1;
     odstavec.style.fontSize = size + "px"
 }
+
+let zvuk;
+zvuk = document.querySelector("#zvuk");
+
+function play() {
+    zvuk.play()
+}
+
+function pause() {
+    zvuk.pause()
+}
