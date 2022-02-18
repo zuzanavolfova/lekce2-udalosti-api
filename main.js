@@ -22,17 +22,29 @@ function odstavecZvetseni() {
     odstavec.style.fontSize = size + "px"
 }
 
-let zvuk;
-zvuk = document.querySelector("#zvuk");
+let song;
+song = document.querySelector("#zvuk");
 
 function play() {
-    zvuk.play()
+    song.play()
 }
 
 function pause() {
-    zvuk.pause()
+    song.pause()
 }
 
 function jdiNaZacatek() {
-    zvuk.currentTime = 0
+    song.currentTime = 0
+}
+
+function ztisit() {
+    song.volume = 0
+}
+
+function zvukPulka() {
+    song.volume = 0.5
+}
+
+function zvukMaximum() {
+    song.volume = 1
 }
