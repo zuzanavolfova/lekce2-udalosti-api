@@ -1,4 +1,6 @@
 // tady je místo pro náš program
+
+
 function setBold(element) {
     element.style.fontWeight = "bold"
 
@@ -48,3 +50,31 @@ function zvukPulka() {
 function zvukMaximum() {
     song.volume = 1
 }
+
+let cervene=document.querySelector('.cervene');
+cervene.onclick=odstavecBarva;
+
+let zvetseni=document.querySelector('.zvetseni');
+zvetseni.onclick=odstavecZvetseni;
+
+let hraj=document.querySelector('.hraj');
+hraj.onclick=play;
+
+let pauza=document.querySelector('.pauza');
+pauza.onclick=pause;
+
+let zacatek=document.querySelector('.zacatek');
+zacatek.onclick=jdiNaZacatek;
+
+let ztlumit=document.querySelector('.ztlumit');
+ztlumit.onclick=ztisit;
+
+let akorat=document.querySelector('.akorat');
+akorat.onclick=zvukPulka;
+
+let pecky=document.querySelector('.pecky');
+pecky.onclick=zvukMaximum;
+
+
+
+
